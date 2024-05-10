@@ -1,0 +1,42 @@
+.rule_container {
+  padding: 40px;
+  .rule_game {
+    display: flex;
+    .rule_number {
+      text-align: right;
+      margin-right: 10px;
+      color: #222;
+      font-family: 'Pacifico', sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .rule_text {
+      margin-top: 20px;
+      color: #222;
+      font-family: 'Quicksand Bold', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .rule_container {
+    padding: 0;
+    .rule_game {
+      display: inline-block;
+    }
+    .rule_number {
+      font-size: 20px !important;
+    }
+
+    .rule_text {
+      font-size: 13px !important;
+      margin-top: 5px !important;
+    }
+  }
+}

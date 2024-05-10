@@ -1,0 +1,196 @@
+/* Reset CSS */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url('../../assets/Rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  color: #fff;
+  background-image: url('../../assets/Rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  background: none;
+  color: #222;
+  font-family: 'Pacifico', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 15px;
+}
+
+.headerContent {
+  padding: 20px 120px 0;
+}
+
+.logo {
+  width: 130px;
+  height: 60px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+// Phần content
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-top: 40px;
+  background-image: url('../../assets/Rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -64px;
+
+  .pageContent {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1176px;
+    height: 550px;
+    border-radius: 10px;
+    padding: 0 50px;
+  }
+
+  
+}
+
+.iconMenu {
+    display: none;
+  }
+
+@media (max-width: 576px) {
+  .headerContent {
+    padding: 0 !important;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+ 
+
+  .iconMenu {
+    display: flex;
+    justify-content: right;
+    margin-left: 10px;
+  }
+
+  .btn_menu {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn_menu img{
+    width: 100%;
+  }
+
+  .container {
+    height: 120vh;
+    background-position: -674px -47px;
+    padding-top: 10px;
+    .pageContent {
+        width: 400px;
+        height: 80%;
+        padding: 0 10px;
+    }
+  }
+
+  .modalMenu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+  }
+
+  .menu_mobile {
+    background: none;
+    color: #222;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 15px;
+    background-color: #fff;
+    height: 100%;
+    width: 60%;
+    // position: relative;
+    padding-top: 50px;
+  }
+
+  .btn_close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    right: 42%;
+  }
+
+  .btn_close img {
+    width: 100%;
+  }
+}
